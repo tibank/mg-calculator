@@ -1,0 +1,115 @@
+h1 {
+  color: rgb(3, 97, 3);
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(3, 97, 3);
+  margin: 0px 0px 20px 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.wrapper {
+}
+
+.table__header {
+  font-size: 18px;
+  text-align: center;
+}
+
+.table__banks {
+  margin: 0px 0px 25px 0px;
+}
+
+.text__head-table {
+  text-align: center;
+  background: #b3dced; /* Old browsers */
+  background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #b3dced 0%,
+    #29b8e5 50%,
+    #bce0ee 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+}
+
+.table__header-border {
+  border-top: 2px solid rgb(21, 21, 121);
+  border-bottom: 2px solid rgb(21, 21, 121);
+  border-right: 2px solid rgb(21, 21, 121);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.table__row-border {
+  border-bottom: 2px solid rgb(23, 150, 182);
+}
+
+.table__shadow {
+  box-shadow: 1px 1px 1px rgb(45, 45, 223);
+}
+.col__name {
+  width: 40%;
+}
+.col__intrest-rate {
+  width: 10%;
+}
+.col__max-loan {
+  width: 10%;
+}
+.col__min-pay {
+  width: 10%;
+}
+
+.col__loan-term {
+  width: 10%;
+}
+.col__actions {
+  width: 20%;
+}
+
+
+.text__row {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+}
+
+.text__row:first-child {
+  text-align: left;
+}
+
+.btn__actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn__item {
+  flex: 1 1 0;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0px 15px;
+  padding: 5px 0px;
+  background-color: rgb(101, 206, 101);
+  box-shadow: 1px 3px 1px rgb(17, 136, 17);
+  color: white;
+}
+
+.btn__item:hover {
+  box-shadow: 0px 1px 1px rgb(17, 136, 17);
+}
+
+.btn__edit {
+}
+.btn__calc {
+}
+.btn__delete {
+}
+
+.btn__all-banks {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}

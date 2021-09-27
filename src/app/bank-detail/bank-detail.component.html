@@ -1,0 +1,31 @@
+<form [formGroup]="bankForm">
+
+  <div class="wrapper">
+    
+  </div>
+  <div>
+    <label for="bank-name">Bank name: </label>
+    <input id="bank-name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="interest-rate">Interest rate: </label>
+    <input id="interest-rate" type="number" formControlName="interestRate">
+  </div>
+
+  <div>
+    <label for="max-loan">Maximum loan: </label>
+    <input id="max-loan" type="number" formControlName="maxLoan">
+  </div>
+
+  <div>
+    <label for="min-payment">Minimum down payment: </label>
+    <input id="min-payment" type="number" formControlName="minPayment">
+  </div>
+
+  <div>
+    <label for="loan-term">Loan term: </label>
+    <input id="loan-term" type="number" formControlName="loanTerm">
+  </div>
+
+</form>

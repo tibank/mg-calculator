@@ -1,0 +1,56 @@
+<div class="wrapper">
+  <header></header>
+  <main>
+    <h1>Morgage calculator</h1>
+    <div class="table__header">
+      List of banks
+    </div>
+    <table class="table__banks">
+      <thead class="text__head-table">
+      <tr>
+        <td class="col__name table__header-border table__shadow">Name</td>
+        <td class="col__intrest-rate table__header-border  table__shadow">Interest rate</td>
+        <td class="col__max-loan table__header-border table__shadow">Maximum loan</td>
+        <td class="col__min-pay table__header-border table__shadow">Minimum down payment</td>
+        <td class="col__loan-term table__header-border table__shadow">Loan term</td>
+        <td class="col__actions table__header-border table__shadow">Action</td>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr class="row__data" *ngFor="let bank of banks" routerLink="/detail/{{bank.id}}">
+        <td class="col__name table__row-border text__row">{{bank.name}}</td>
+        <td class="col__intrest-rate table__row-border text__row">{{bank.interestRate}}</td>
+        <td class="col__max-loan table__row-border text__row">{{bank.maxLoan}}</td>
+        <td class="col__min-pay table__row-border text__row">{{bank.minDownPayment}}</td>
+        <td class="col__loan-term table__row-border text__row">{{bank.loanTerm}}</td>
+        <td class="col__actions table__row-border">
+          <div class="btn__actions">
+            <div class="btn__item btn__edit">
+              Edit
+            </div>
+            <div class="btn__item btn__calc">
+              Caclulate
+            </div>
+            <div class="btn__item btn__delete" (click)="removeBank(bank)">
+              Delete
+            </div>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <section>
+      <div class="btn__all-banks">
+        <div class="btn__item btn__add">
+          New
+        </div>
+        <div class="btn__item btn__delete-all">
+          Delete All
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</div>
+
